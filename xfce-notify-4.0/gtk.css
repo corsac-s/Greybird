@@ -1,0 +1,70 @@
+#XfceNotifyWindow {
+    background-image: none;
+    background-color: shade(@panel_bg_color, 0.5);
+    border: 1px solid shade(@panel_bg_color, 0.2);
+    border-radius: 6px;
+    padding: 30px 10px;
+    box-shadow: inset -1px 0 shade(@panel_bg_color, 1.9);
+    color: @panel_fg_color;
+}
+
+#XfceNotifyWindow:hover {
+    border-color: shade(@panel_bg_color, 0.3);
+}
+
+#XfceNotifyWindow GtkLabel {
+}
+
+#XfceNotifyWindow GtkLabel#summary {
+    padding: 0 6px;
+    font: bold;
+}
+
+#XfceNotifyWindow GtkProgressBar#gauge.trough {
+    background-image: linear-gradient(to bottom,
+                                      shade(@panel_bg_color, 0.75),
+                                      shade(@panel_bg_color, 1.95)
+                                      );
+    border: 1px solid shade(@panel_bg_color, 0.2);
+    border-radius: 0px;
+}
+
+#XfceNotifyWindow #gauge.progressbar,
+#XfceNotifyWindow #gauge.progressbar row {
+    background-image: none;
+    background-color: shade(@panel_fg_color, 0.7);
+}
+
+#XfceNotifyWindow GtkButton {
+    background-image: none;
+    background-color: shade(@panel_bg_color, 0.7);
+    color: @panel_fg_color;
+    border: 1px solid shade(@panel_bg_color, 0.4);
+    box-shadow: none;
+    padding: 6px 9px;
+    margin: 6px 0;
+    font-size: 110%;
+}
+
+#XfceNotifyWindow GtkButton:hover {
+    background-image: none;
+    background-color: shade(@panel_bg_color, 0.9);
+    color: shade(@panel_fg_color, 1.1);
+    border: 1px solid shade(@panel_bg_color, 0.4);
+    box-shadow: none;
+}
+
+#XfceNotifyWindow GtkProgressBar.trough {
+    background-image: linear-gradient(to bottom,
+                                      shade(@panel_bg_color, 0.75),
+                                      shade(@panel_bg_color, 1.95)
+                                      );
+    border: 1px solid shade(@panel_bg_color, 0.2);
+    border-radius: 0px;
+}
+
+#XfceNotifyWindow GtkProgressBar.progressbar,
+#XfceNotifyWindow GtkProgressBar.progressbar row {
+    background-image: none;
+    background-color: shade(@panel_fg_color, 0.7);
+}
